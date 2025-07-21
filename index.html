@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matteo Bonomi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Matteo Bonomi</div>
+    <label class="lang-switch" aria-label="Cambia lingua">
+      <input type="checkbox" id="lang-toggle">
+      <span class="slider"></span>
+      <span class="lang-label lang-it">IT</span>
+      <span class="lang-label lang-en">EN</span>
+    </label>
+    <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="section home-section">
+      <div class="home-content">
+        <div>
+          <h1 class="fade-in-title">Benvenuto!</h1>
+          <p class="subtitle fade-in-subtitle">Sviluppatore web &amp; appassionato di tecnologia</p>
+        </div>
+        <img src="image24.jpg" alt="Foto di Matteo Bonomi" class="profile-img">
+      </div>
+    </section>
+    <section id="about" class="section about-section">
+      <div class="bio-card animate">
+        <div class="bio-icon">👋</div>
+        <div class="bio-text">
+          <p>
+            Ciao! Sono Matteo, <strong>Sviluppatore Web</strong> e appassionato di tecnologia.<br>
+            Ho un background linguistico maturato tra l’Italia e l’estero, come potrai vedere sul mio profilo LinkedIn, che mi ha permesso di sviluppare una forte apertura internazionale e ottime capacità comunicative.<br>
+            Parallelamente, ho coltivato la mia passione per la programmazione, specializzandomi in <strong>HTML</strong>, <strong>CSS</strong> e <strong>Python</strong>, con un interesse crescente per la <strong>cybersecurity</strong>.
+          </p>
+        </div>
+      </div>
+      <h2>Le mie competenze</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon html"></div>
+          <h3>HTML</h3>
+          <p>Esperienza nella creazione di pagine web strutturate e accessibili.</p>
+        </div>
+        <div class="card">
+          <div class="icon css"></div>
+          <h3>CSS</h3>
+          <p>Abilità nel design responsivo e animazioni moderne.</p>
+        </div>
+        <div class="card">
+          <div class="icon python"></div>
+          <h3>Python</h3>
+          <p>Competenze nello sviluppo di script e applicazioni.</p>
+        </div>
+        <div class="card">
+          <div class="icon cyber"></div>
+          <h3>Cyber Security</h3>
+          <p>Conoscenze nella protezione dei sistemi informatici e analisi delle vulnerabilità.</p>
+        </div>
+      </div>
+      <div class="languages">
+        <h3>Ranking Lingue</h3>
+        <div class="language-bar">
+          <span>Italiano</span>
+          <div class="progress">
+            <div class="progress-fill professionale" style="width: 100%"></div>
+          </div>
+          <span class="level">Madrelingua</span>
+        </div>
+        <div class="language-bar">
+          <span>Inglese</span>
+          <div class="progress">
+            <div class="progress-fill professionale" style="width: 90%"></div>
+          </div>
+          <span class="level">C2</span>
+        </div>
+        <div class="language-bar">
+          <span>Tedesco</span>
+          <div class="progress">
+            <div class="progress-fill professionale" style="width: 70%"></div>
+          </div>
+          <span class="level">Professionale</span>
+        </div>
+        <div class="language-bar">
+          <span>Francese</span>
+          <div class="progress">
+            <div class="progress-fill professionale" style="width: 40%"></div>
+          </div>
+          <span class="level">Base</span>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section">
+      <h2>Contattami</h2>
+      <div class="contact-box">
+        <p>Seguimi su LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/matteo-bonomi-9199b328a/" target="_blank" class="linkedin-btn" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32" style="vertical-align:middle; margin-right:8px;">
+            <circle cx="16" cy="16" r="16" fill="#0077b5"/>
+            <path d="M24 24h-3.555v-5.568c0-1.328-.024-3.037-1.85-3.037-1.853 0-2.136 1.447-2.136 2.942V24H13V13h3.414v1.507h.049c.476-.899 1.637-1.85 3.37-1.85 3.604 0 4.27 2.372 4.27 5.455V24zM9.337 11.493a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM11.119 24H7.555V13h3.564v11z" fill="#fff"/>
+          </svg>
+          Seguimi su LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Matteo Bonomi. Tutti i diritti riservati.</p>
+  </footer>
+  <script src="script.js"></script>
+  <style>
+    @media (max-width: 700px) {
+      .hamburger {
+        display: flex;
+      }
+      nav ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 55vw;         /* PIÙ STRETTO */
+        max-width: 200px;    /* Limite massimo larghezza */
+        height: 100vh;
+        background: #fff;
+        box-shadow: -2px 0 16px rgba(0,0,0,0.08);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 4em 1.5em 2em 1.5em;
+        gap: 2em;
+        display: none;
+        z-index: 1100;
+      }
+      nav ul.open {
+        display: flex;
+      }
+      nav {
+        padding: 1em 0.7em;
+      }
+    }
+  </style>
+</body>
+</html>
